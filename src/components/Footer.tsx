@@ -1,8 +1,9 @@
 import Image from 'next/image';
-import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 export default function Footer() {
   return (
+    <>
     <footer className="bg-green-100 text-black px-6 pt-10 pb-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
 
@@ -25,25 +26,25 @@ export default function Footer() {
               <div>
                 <h3 className="font-bold mb-2">SHOP</h3>
                 <ul className="space-y-1">
-                  <li className="hover:text-green-700 transition-transform duration-200 hover:scale-105 cursor-pointer">FACE CARE</li>
-                  <li className="hover:text-green-700 transition-transform duration-200 hover:scale-105 cursor-pointer">BODY CARE</li>
+                  <li className="hover:text-green-700 transition duration-200 hover:scale-105 cursor-pointer">FACE CARE</li>
+                  <li className="hover:text-green-700 transition duration-200 hover:scale-105 cursor-pointer">BODY CARE</li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-bold mb-2">HELP</h3>
                 <ul className="space-y-1">
-                  <li className="hover:text-green-700 transition-transform duration-200 hover:scale-105 cursor-pointer">SHIPPING & RETURNS</li>
-                  <li className="hover:text-green-700 transition-transform duration-200 hover:scale-105 cursor-pointer">PAYMENT</li>
-                  <li className="hover:text-green-700 transition-transform duration-200 hover:scale-105 cursor-pointer">FAQ</li>
+                  <li className="hover:text-green-700 transition duration-200 hover:scale-105 cursor-pointer">SHIPPING & RETURNS</li>
+                  <li className="hover:text-green-700 transition duration-200 hover:scale-105 cursor-pointer">PAYMENT</li>
+                  <li className="hover:text-green-700 transition duration-200 hover:scale-105 cursor-pointer">FAQ</li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="font-bold mb-2">COCO KHMER</h3>
                 <ul className="space-y-1">
-                  <li className="hover:text-green-700 transition-transform duration-200 hover:scale-105 cursor-pointer">OUR STORY</li>
-                  <li className="hover:text-green-700 transition-transform duration-200 hover:scale-105 cursor-pointer">CONTACT US</li>
+                  <li className="hover:text-green-700 transition duration-200 hover:scale-105 cursor-pointer">OUR STORY</li>
+                  <li className="hover:text-green-700 transition duration-200 hover:scale-105 cursor-pointer">CONTACT US</li>
                 </ul>
               </div>
 
@@ -91,14 +92,24 @@ export default function Footer() {
               <FaInstagram />
               Instagram
             </a>
+            <a
+              href="https://www.tiktok.com/@yourpage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-black transition-all duration-200 transform hover:scale-110 flex items-center gap-2"
+            >
+              <FaTiktok />
+              TikTok
+            </a>
           </div>
         </div>
       </div>
-
-      {/* Copyright */}
-      <div className="text-center text-sm mt-10 text-gray-600">
-        © 2023 by Coco Khmer.
-      </div>
     </footer>
+    {/* Bottom Line */}
+      <div className="bg-green-400 text-center text-sm text-gray-600 space-y-1 py-4">
+        <p>© 2025 CoCo Khmer. All Rights Reserved.</p>
+        <p>Made in Cambodia | <span className="underline hover:text-green-800 cursor-pointer">Privacy Policy</span></p>
+      </div>
+    </>
   );
 }
